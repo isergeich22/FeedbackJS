@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    padding: 20px 0;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+    .action {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+        .action #name {
+            width: 75%;
+            height: 30px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .action #feedback {
+            width: 75%;
+            height: 30px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .action #submit {
+            width: 20%;
+            background: #fff;
+            border: none;
+            font-family: 'Nunito', sans-serif;
+            border-bottom: 1px solid #ccc;
+            height: 50px;
+            transition: .3s ease-in;
+        }
+
+        .action #submit:hover {
+            background: #ccc;
+            color: #fff;
+            transition: .3s ease-in;
+            border: none;
+        }
+
+        .action .invalid {
+            border-color: #ff3949 !important;
+            background-color: #ff828c4d;
+        }
+
+    .feedback-list {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Nunito', sans-serif;
+        flex-wrap: wrap;
+        gap: 10%;
+        row-gap: 25px;
+        width: 100%;
+    }
+
+        .feedback-list .card {
+            width: 26.66%;
+            text-align: center;
+        }
+
+            .card #fback_id {
+                display: none;
+            }
+
+            .card #remove {
+                margin-top: 5%;
+                width: 40%;
+                height: 35px;
+                border: 1px solid #000;
+                background: #fff;
+                color: #f00;
+                font-family: 'Nunito', sans-serif;
+                transition: .3s ease-in;
+            }
+
+            .card #remove:hover {
+                background: #f00;
+                color: #fff;
+                border: none;
+                transition: .3s ease-in;
+            }
+
+    
